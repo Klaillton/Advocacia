@@ -1,0 +1,26 @@
+create table contraParte (
+codigo bigint not null auto_increment, 
+celular_advogado varchar(255), 
+email_advogado varchar(255), 
+nome_advogado varchar(255), 
+telefone_advogado varchar(255), 
+cpf_cnpj varchar(255) not null, 
+email varchar(255), 
+bairro varchar(255), 
+cep varchar(255), 
+complemento varchar(255), 
+logradouro varchar(255), 
+numero varchar(255), 
+local_nascimento varchar(255), 
+nome varchar(255) not null, 
+profissao varchar(255), 
+rg varchar(255), 
+celular1 varchar(255), 
+celular2 varchar(255), 
+telefoneFixo varchar(255), 
+telefoneRecado varchar(255), 
+tipo_pessoa varchar(255) not null, 
+codigo_cidade bigint, 
+primary key (codigo)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+alter table contraParte add constraint  foreign key (codigo_cidade) references cidade (codigo);

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<!-- Modal -->
+	<div class="modal fade" id="modalVisualizarCliente" tabindex="-1"
+		role="dialog" th:fragment="modal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Visualizar Cliente</h4>
+				</div>
+				<div class="modal-body">
+					<form method="GET"  th:object="${cliente}">
+						<div class="row">
+							<div class="col-sm-7  form-group">
+								<label for="nome" class="control-label">Nome</label> 
+								<input id="nome" type="text" class="form-control" th:field="*{nome}" />
+							</div>
+							<div class="col-sm-2  form-group">
+								<label id="nome" class="control-label">RG</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-3  form-group">
+								<label id="nome" class="control-label">CPF/CNPJ</label> 
+								<label class="control-label" ></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4  form-group">
+								<label id="nome" class="control-label">Pai</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-4  form-group">
+								<label id="nome" class="control-label">Mãe</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-3  form-group">
+								<label id="nome" class="control-label">Local de Nascimento</label> 
+								<label class="control-label" ></label>
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-sm-10  form-group">
+								<label id="nome" class="control-label">E-mail</label> 
+								<label class="control-label" ></label>
+							</div>							
+							
+						</div>
+						<div class="row">
+							<div class="col-sm-3  form-group">
+								<label id="nome" class="control-label">Telefone Fixo</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-3  form-group">
+								<label id="nome" class="control-label">Telefone Recado</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-3  form-group">
+								<label id="nome" class="control-label">Celular 1</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-3  form-group">
+								<label id="nome" class="control-label">Celular 2</label> 
+								<label class="control-label" ></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6  form-group">
+								<label id="nome" class="control-label">Logradouro</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-2  form-group">
+								<label id="nome" class="control-label">Numero</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-4  form-group">
+								<label id="nome" class="control-label">Bairro</label> 
+								<label class="control-label" ></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-5  form-group">
+								<label id="nome" class="control-label">Complemento</label> 
+								<label class="control-label" ></label>
+							</div>
+							<div class="col-sm-3  form-group">
+								<label id="nome" class="control-label">CEP</label> 
+								<label class="control-label" ></label>
+							</div>
+							
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

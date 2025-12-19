@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+# Maven build artifacts
+target/
+
 # Folder config file
 Desktop.ini
 
